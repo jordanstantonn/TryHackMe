@@ -3,6 +3,7 @@
 ## Network Topology Setup
 
 I began by adding the required devices to the Packet Tracer workspace, including a PC, a laptop, a wireless router, a cable modem, and the Internet cloud. Once the devices were in place, I connected them using the appropriate cabling. The PC was connected to the wireless router with a copper straight-through cable, the wireless router was connected to the cable modem with a copper crossover cable, and the cable modem was connected to the Internet cloud using a coaxial cable.
+<img width="831" height="439" alt="image" src="https://github.com/user-attachments/assets/76561284-ca5b-47ca-84c4-26e00e7e54a4" />
 
 
 ## PC Configuration
@@ -36,13 +37,15 @@ The successful replies confirmed that the PC could communicate with the Cisco se
 Next, I configured the laptop for wireless connectivity. Since the laptop initially contained a wired Ethernet module, I replaced it with the **Wireless WPC300N** module through the Physical tab. After powering the laptop back on, I opened **PC Wireless**, located the **HomeNetwork** wireless network, and connected to it.
 
 Once connected, I verified that the laptop had successfully joined the wireless network by pinging **cisco.srv**. The successful responses confirmed that both the wired and wireless devices had network connectivity.
+<img width="1038" height="816" alt="image" src="https://github.com/user-attachments/assets/13f4d4da-8484-4de8-a87a-56c30b5707b1" />
 
 ## Results
 
-By the end of the lab, both the PC and laptop successfully obtained IP addresses through DHCP and were able to communicate with the Cisco server. This lab reinforced the process of creating a basic home network topology, verifying DHCP configuration, testing connectivity, and configuring a wireless client in Cisco Packet Tracer.
+Now both the PC and laptop successfully obtained IP addresses through DHCP and were able to communicate with the Cisco server. This lab reinforced the process of creating a basic home network topology, verifying DHCP configuration, testing connectivity, and configuring a wireless client in Cisco Packet Tracer.
 
 ## Final IP Addressing
 
 The final IP addressing table is shown below.
 
-*Insert screenshot of the completed IP addressing table here.*
+<img width="1021" height="170" alt="image" src="https://github.com/user-attachments/assets/b4561305-2bf4-488c-ba47-b346b4ff07aa" />
+
