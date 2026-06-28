@@ -1,55 +1,43 @@
-# [TryHackMe](https://tryhackme.com/)
+# Cisco Packet Tracer Lab – Home Network Configuration
 
-### **`TryHackMe`** is an online cybersecurity training platform that teaches security concepts through interactive labs and hands-on challenges directly in your browser.
- 
+## Network Topology Setup
 
-## Pre Security
+I began by adding the required devices to the Packet Tracer workspace, including a PC, a laptop, a wireless router, a cable modem, and the Internet cloud. Once the devices were in place, I connected them using the appropriate cabling. The PC was connected to the wireless router with a copper straight-through cable, the wireless router was connected to the cable modem with a copper crossover cable, and the cable modem was connected to the Internet cloud using a coaxial cable.
 
-- The Pre-Security pathway introduces the core technical knowledge needed before moving into offensive or defensive security. It covers how computers, networks, operating systems, and the web work so you can better understand how attacks and defenses operate.
+## PC Configuration
 
- 
+After building the topology, I verified that the PC was configured to obtain its network settings automatically through DHCP by checking **Desktop → IP Configuration**. Since the PC was already set to use DHCP, it automatically received its network configuration.
 
-### 1. Introduction to Cybersecurity
+To confirm that the configuration was successful, I opened the Command Prompt and ran:
 
-- [Intro to Offensive Security](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/01%20-%20Introduction%20to%20Cybersecurity/01%20-%20Intro%20to%20Offensive%20Security)
-- [Intro to Defensive Security](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/01%20-%20Introduction%20to%20Cybersecurity/02%20-%20Intro%20to%20Defensive%20Security)
-      
-### 2. Network Fundamentals
+```text
+ipconfig /all
+```
 
-- [What is Networking?](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/02%20-%20Network%20Fundamentals/01%20-%20What%20is%20Networking)
-- [Intro to LAN](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/02%20-%20Network%20Fundamentals/02%20-%20Intro%20to%20LAN)
-- [The OSI Model](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/02%20-%20Network%20Fundamentals/03%20-%20The%20OSI%20Model)
+The output showed that the PC had successfully obtained an IP address, subnet mask, default gateway, and DNS server from the DHCP server.
 
-### 3. How the Web Works?
+## Connectivity Verification
 
-- [DNS in Detail](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/03%20-%20How%20the%20Web%20Works%3F/01%20-%20DNS%20in%20Detail)
-- [HTTP in Detail](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/03%20-%20How%20the%20Web%20Works%3F/02%20-%20HTTP%20in%20Detail)
+With the PC configured, I tested network connectivity by running:
 
-### 4. Linux Fundamentals
+```text
+ping cisco.srv
+```
 
-- [Linux Fundamentals Part 1](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/04%20-%20Linux%20Fundamentals/01%20-%20Linux%20Fundamentals%20Part%201)
-- [Linux Fundamentals Part 2](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/04%20-%20Linux%20Fundamentals/02%20-%20Linux%20Fundamentals%20Part%202)
-- [Linux Fundamentals Part 3](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/04%20-%20Linux%20Fundamentals/03%20-%20Linux%20Fundamentals%20Part%203)
+The successful replies confirmed that the PC could communicate with the Cisco server and that the network was functioning as expected.
 
-### 5. Windows Fundamentals
+## Laptop Wireless Configuration
 
-- [Windows Fundamentals Part 1](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/05%20-%20Windows%20Fundamentals/01%20-%20Windows%20Fundamentals%20Part%201)
-- [Windows Fundamentals Part 2](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/05%20-%20Windows%20Fundamentals/02%20-%20Windows%20Fundamentals%20Part%202)
-- [Windows Fundamentals Part 3](https://github.com/ShubhamJagtap2000/TryHackMe-THM/tree/main/05%20-%20Windows%20Fundamentals/03%20-%20Windows%20Fundamentals%20Part%203)
+Next, I configured the laptop for wireless connectivity. Since the laptop initially contained a wired Ethernet module, I replaced it with the **Wireless WPC300N** module through the Physical tab. After powering the laptop back on, I opened **PC Wireless**, located the **HomeNetwork** wireless network, and connected to it.
 
+Once connected, I verified that the laptop had successfully joined the wireless network by pinging **cisco.srv**. The successful responses confirmed that both the wired and wireless devices had network connectivity.
 
+## Results
 
-## Penetration Tester
+By the end of the lab, both the PC and laptop successfully obtained IP addresses through DHCP and were able to communicate with the Cisco server. This lab reinforced the process of creating a basic home network topology, verifying DHCP configuration, testing connectivity, and configuring a wireless client in Cisco Packet Tracer.
 
-- Responsible for testing technology products for security loopholes.
+## Final IP Addressing
 
-- You may see penetration testing referred to as pentesting and ethical hacking. 
-- A penetration tester’s job role is to test the security of the systems and software within a company - through attempts to uncover flaws and vulnerabilities through systemised hacking. 
-- Penetration testers exploit these vulnerabilities to evaluate the risk in each instance. 
-- The company can then take these insights to rectify issues to prevent a real-world cyber attack.
+The final IP addressing table is shown below.
 
-**Responsibilities**
-
-    Conduct tests on computer systems, networks, and web-based applications
-    Perform security assessments, audits, and analyse policies
-    Evaluate and report on insights, recommending actions for attack prevention
+*Insert screenshot of the completed IP addressing table here.*
