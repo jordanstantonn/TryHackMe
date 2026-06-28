@@ -1,4 +1,4 @@
-# Cisco Packet Tracer Lab – Home Network Configuration
+# SOHO Network Deployment and Configuration - Cisco Packet Tracer
 
 ## Network Topology Setup
 
