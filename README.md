@@ -1,5 +1,7 @@
 # SOHO Network Deployment and Configuration - Cisco Packet Tracer
 
+[Video Demonstration Coming Soon](https://www.youtube.com/@jordanstantoncyber)
+
 ## Network Topology Setup
 
 I began by adding the required devices to the Packet Tracer workspace, including a PC, a laptop, a wireless router, a cable modem, and the Internet cloud. Once the devices were in place, I connected them using the appropriate cabling. The PC was connected to the wireless router with a copper straight-through cable, the wireless router was connected to the cable modem with a copper crossover cable, and the cable modem was connected to the Internet cloud using a coaxial cable.
